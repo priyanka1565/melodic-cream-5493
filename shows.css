@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar{
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+}
+#signin{
+  
+  font-size: 25px;
+  margin-top: 10px;
+height: 70%;
+width: 200px;
+background-color: rgb(52, 52, 233);
+color: white;
+border-radius: 10px;
+margin-right: 600px;
+cursor: pointer;
+}
+#logo{
+  height: 100%;
+  width: 200px;
+  /* border: 1px solid red; */
+  margin-left: 600px;
+}
+#img-section{
+  height: 80vh;
+  width: 80%;
+  border: 1px solid red;
+  margin: auto;
+}
+#shows-card-img{
+  margin: auto;
+  display: flex;
+  height: 500px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+#shows-main-img{
+
+  height: 80vh;
+  width: 100%;
+}
+
+#search{
+  margin-top: 10px;
+  height: 54px;
+  text-align: center;
+  /* border-color: rgba(254, 248, 248, 0.538); */
+  border-radius: 10px;
+  margin-left: 40%;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+}
+#shows-card-img>div{
+  margin: auto;
+  height: 90%;
+  width: 25%;
+  border: 1px solid red;
+  margin: 3px;
+
+}
+#shows-card-img>div>img{
+  height: 100%;
+  width: 100%;
+}
+#select{
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+}
+.shows-card-small-img{
+height: 50px;
+}
+#meet{
+  margin-top: 150px;
+  margin-left: 50px;
+}
+#meet-img{
+  margin: auto;
+  height: 900px;
+  width: 80%;
+  border: 1px solid red;
+
+}
+#meet-img>img{
+  height: 100%;
+  width: 100%;
+}
+#trailers{
+  margin-top: 150px;
+  margin-left: 50px;
+}
+#trailers-card{
+  margin: auto;
+  display: flex;
+  margin: auto;
+  height: 350px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+#trailers-card>div{
+  border-radius: 20px;
+  margin: auto;
+  height: 80%;
+  width: 16%;
+  /* border: 1px solid red; */
+}
+#trailers-card>div>img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
