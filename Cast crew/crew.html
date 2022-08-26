@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crew.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <!-- <img  src="https://is4-ssl.mzstatic.com/image/thumb/Video124/v4/eb/1f/ff/eb1fffd1-d08a-4540-d4f5-713358188bb5/pr_source.lsr/738x416.webp">
+        <h3>Its alaways sunnny in philadelphia</h3>
+        <h3>The Gang gets a new Number</h3>
+         -->
+    </div>
+    <div id="two">
+        <div>
+            <button>i tunes</button>
+            <p>Available on i Tunes</p>
+        </div>
+        <div>
+            <p>The blast from the past promts the guys to expand membership, and Dee to reconsider her future.</p>
+            <div>
+                <p class="adjust">comedy Nov 4,2010 20 min iTunes</p>
+                <button class="first">B</button>
+                <button class="second">HD</button>
+                <button class="third">CC</button>
+            </div>
+           
+        </div>
+        <div>
+            <p>Starring Jason Sudeikis,Dave Foley, Rene Auberjonois</p>
+        </div>
+    </div>
+    <div id="three">
+       <div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/xzPEaxbCndlnWw5AwIEBMg/492x492bb.webp">
+        <h4>Jackson hill</h4>
+        <p>Director</p>
+       </div>
+       <div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/wm9MC1yAhktMBoszHwHVvg/492x492bb.webp">
+        <h4>Dave Foley</h4>
+        <p>Principal Machlntyre</p>
+       </div>
+       <div>
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/LFN-Jj429GQRhPSA0ndkMw/492x492ve.webp">
+        <h4>Rane Anderson</h4>
+        <p>Dr.Lilly</p>
+       </div>
+       <div>
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/wnJx_lECYdZJDvySXbtDsA/492x492bb.webp">
+        <h4>Johnny Pemberton</h4>
+        <p>Craing</p>
+       </div>
+       <div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/F3ATP75h8iO23I7cPD5DgA/492x492bb.webp">
+        <h4>Lauren Pennington</h4>
+        <p>lisa</p>
+       </div> 
+    </div>
+    <div id="four">
+        <div>
+            <h3 class="h1">Information</h3>
+            <h4>Genre</h4>
+            <p>comedy</p>
+
+            <h4>Released</h4>
+            <p>2010</p>
+
+            <h4>RunTime</h4>
+            <p>20 min</p>
+
+            <h4>Rated</h4>
+            <p>TV-MA</p>
+
+            <h4>Region of Origin</h4>
+            <p>United States</p>
+        </div>
+        <div>
+            <h3 class="h1">Language</h3>
+            <h4>Original Audio</h4>
+            <p>English</p>
+
+            <h4>Audio</h4>
+            <p>English (United States)</p>
+
+            <h4>Subtitle</h4>
+            <p>English(CC)</p>
+        </div>
+        <div class="last">
+            <h3 class="h1" >Accessibility</h3>
+            <p>closed captions(CC) refer to subtitles in teh available language with the addition of relevant nonn-dialouge information</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let data = JSON.parse(localStorage.getItem('movies'))
+    let box = document.getElementById('one')
+    console.log(data)
+    let img = document.createElement('img')
+    img.src = data.img;
+    let h3 = document.createElement('h3')
+    h3.innerText = data.title;
+    let des = document.createElement('h3')
+    des.innerText = data.des;
+    box.append(img,h3,des)
+</script>
