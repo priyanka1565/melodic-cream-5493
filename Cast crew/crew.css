@@ -1,0 +1,102 @@
+#one{
+    width:15cm;
+    height:14cm;
+    border:1px solid black;
+    margin: auto;
+    margin-top: 2cm;
+}
+#one>img{
+    width:100%;
+    height:80%;
+    border-radius: 15px;
+}
+h3{
+    text-align: center;
+}
+*{
+font-family: sans-serif;
+}
+#two{
+    display: flex;
+    height:4cm;
+    width:90%;
+    border:1px solid black;
+    margin: auto;
+    
+}
+
+
+#two:hover{
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#two>div:nth-child(1){
+    border:1px solid black;
+
+}
+#two>div:nth-child(2){
+    width:20cm;
+    height: 100%;
+    border:1px solid black;
+}
+#two>div>button{
+    width:6cm;
+    height:1cm;
+    font-size: 15px;
+    font-weight: 700;
+    color: blue;
+}
+button+p{
+  font-size: 13px;
+  text-align: center;
+}
+#two>div:nth-child(2)>p:nth-child(1){
+    text-align: center;
+}
+p+div{
+    border:1px solid blue;
+    display: flex;
+    margin-top: 1c;
+}
+.adjust{
+    font-size: 13px;
+    color: grey;
+}
+#two>div:nth-child(2)>div>button{
+    width:1.5cm;
+    height:20px;
+
+   
+}
+#two>div:nth-child(2)>div{
+align-items: center;
+}
+.first{
+    margin-left: 1cm;
+}
+.second{
+    margin-left: 10px;
+    background-color: grey;
+}
+.third{
+    margin-left: 10px;
+}
+#two>div:nth-child(3)>p{
+    font-size:15px;
+}
+#three{
+    width:100%;
+    height:6cm;
+    border:1px solid black;
+    justify-content: left;
+    display: flex;
+}
+#three>div{
+    width:7cm;
+    height:100%;
+    border: 1px solid black;
+}
+
+
+
+

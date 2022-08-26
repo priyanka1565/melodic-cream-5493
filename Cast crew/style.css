@@ -79,3 +79,59 @@ h3{
     margin-top: -10px;
 
 }
+#four{
+    width:auto;
+    height:6cm;
+    justify-content: left;
+    display: flex;
+}
+#four>div{
+    width:7cm;
+    height:80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 2cm;
+    border-radius: 20px;
+}
+#four>div>img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+#four{
+    margin-top: -10px;
+
+}
+
+#five{
+    width:100%;
+    height:6cm;
+    justify-content: left;
+    display: flex;
+    margin: auto;
+  
+}
+#five>div{
+    width:7cm;
+    height:80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 2cm;
+    border-radius: 20px;
+    margin: auto;
+}
+#five>div>img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+#five{
+    margin-top: -10px;
+
+}
+#five h4{
+    font-size: 15px;
+}
+#five p{
+    font-size: 13px;
+    color: grey;
+    margin-top: -10px;
+}
