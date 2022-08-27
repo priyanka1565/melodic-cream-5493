@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+        #one{
+            width:50%;
+           margin: auto;
+           background-color: #333;
+           margin-top: 70px;
+           padding-top: 5px;
+           padding-bottom: 20px;
+           border-radius: 10px;
+
+        }
+        #signup{
+            width:65%;
+            margin: auto;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 10px
+        }
+        p{
+            text-align: center;
+            color: rgb(196, 196, 196);
+        }
+        #one #signup h1{
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        #one #signup h1+p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            margin:-30px 0px 16px 0px;
+        }
+        p+p{
+            margin: -10px 0px 30px 0px;
+        }
+        h1+p>a{
+            color: #2997ff;
+            text-decoration: underline;
+        }
+        #up{
+            margin-top: -10px;
+        }
+
+        .inputBx{
+            margin-bottom: 20px;
+            margin-left: 5px;
+            
+        }
+        .inputBx span{
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .inputBx input{
+            width: 90%;
+            /* padding: 10px 20px; */
+            padding: 7px 25px 7px 25px;
+            height: 40px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            background: transparent;
+            border-radius: 7px;
+            background-color: #222;
+            color: #f5f5f7;
+            border:solid 1px #424245;
+        }
+        #boom{
+            width:100.5%;
+            height: 50px;
+            background: #0071e3;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .terms ,a{
+            color: #999;
+            text-decoration: none;
+        }
+        .terms a{
+            color: #2997ff;
+        }
+
+</style>
+<body>
+    <div id="one">
+        <form action="" id="signup">
+            <h1>Create Apple ID</h1>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+            <p>OR</p>
+
+            <div class="inputBx" id="up">
+                <span>Full Name</span><br>
+                <input type="text" name="" id="name" required placeholder="Full name">
+            </div>
+            <div class="inputBx">
+                <span>Email</span><br>
+                <input type="email" name="" id="email" required placeholder="name@example.com">
+            </div>
+            <div class="inputBx">
+                <span>Username</span><br>
+                <input type="text" name="" id="username" required placeholder="Enter username">
+            </div>
+            <div class="inputBx">
+                <span>Password</span><br>
+                <input type="password" name="" id="password" required placeholder="Password">
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="" value="Join" id="boom">
+            </div>
+            <p class="terms">By joining, you agree to theYou acknowledge that you agree to the <a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms & Conditions</a> when you select Continue.</p>
+</body>
+</html>
+<script>
+    function userdetails(name,email,username,password){
+        this.name=name;
+        this.email=email;
+        this.username=username;
+        this.password=password;
+    }
+    let array=JSON.parse(localStorage.getItem("userdata"))
+
+    let callbackfun=()=>{
+        event.preventDefault();
+        let name=document.querySelector("#name").value;
+        let email=document.querySelector("#email").value;
+        let username=document.querySelector("#username").value;
+        let password=document.querySelector("#password").value;
+
+        let users= new userdetails(name,email,username,password);
+
+        localStorage.setItem("userdata",JSON.stringify(users));
+        window.location.reload();
+        window.location.href="login.html";
+    }
+    document.querySelector("form").addEventListener("submit",callbackfun);
+
+</script>
