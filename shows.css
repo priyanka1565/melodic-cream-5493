@@ -118,3 +118,26 @@ height: 50px;
   width: 100%;
   border-radius: 20px;
 }
+#cast-crew{
+  margin: 20px;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+#cast-crew>div{
+  margin: 5px;
+  /* margin: 20px; */
+  height: 100%;
+  width: 10%;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+}
+#cast-crew>div>img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+#castcrew{
+  margin-left: 40px;
+}
