@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{ box-sizing: border-box;
+         margin: 0px;
+         padding: 0px;
+        font-family: "-apple-system",BlinkMacSystemFont,"-webkit-system-font","Malgun Gothic","Segoe UI","Helvetica Neue",Helvetica,sans-serif;} 
+     
+        #navbar{
+            display: flex;
+            background: black;
+            justify-content: flex-end;
+            gap: 20px;
+            padding-right: 20px;
+            padding: 10px;
+        }
+        #navbar input{
+            margin-top: 10px;
+            padding: 7px;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 20px;
+        
+        }
+        #navbar input:hover{
+            border: 4px solid teal;
+        }
+        #navbar button{
+            background: blue;
+            margin-top: 11px;
+            padding: 7px;
+            border-radius: 5px;
+            width: 100px;      
+          }
+          #navbar button:hover{
+            background: rgb(16, 126, 12);
+          }
+          #navbar a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+          }
+          h3{
+            margin-left:40px;
+          }
+
+        #logo1{
+            padding-right: 60%;
+            
+        }
+        #logo{
+            width: 130px;
+            height: 55px;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            margin-left:18px;
+            gap: 15px;
+        }
+        .image{
+            width: 270px;
+            border-radius: 10px;
+        }
+        #copyright{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 10px;
+              }
+       #infor{
+        /* border: 3px solid red; */
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+      
+       }
+       #infor a{
+        text-decoration: none;
+        color: black;
+        margin-top: -220px;
+       }
+       #footer{
+        background: black;
+        padding: 10px;
+       }
+       #apple{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-top: 20px;
+        color: white;
+       }
+       #apple button{
+        color: black;
+        font-size: 20px;
+        background: whitesmoke;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+       }
+       #apple button:hover{
+        background: rgb(23, 167, 23);
+        color: white;
+       }
+       #terms{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -15px;
+        padding-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+       }
+       #terms a{
+        color: teal;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo1">
+           <image id="logo" src="https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/88/79/7b/88797be4-8033-392e-5124-237d9677bcac/source/1200x675mf.jpg"></image>
+        </div>
+        <div> <input id="search"  type="search" placeholder="Search"> </div>
+        <div><button><a href="sign.html">Sign In</a></button></div>
+        
+    </div>
+     
+    <h3>Explore Popular Series and Films</h3>
+    <div id="container"></div>
+    
+
+    <div id="copyright">
+        <div><p>Copyright 2022 Apple Inc. All rights reserved.</p></div>
+        <div><p>United States</p></div>
+    </div>
+    <div id="infor">
+        <div><a  href="#">Internet Service Terms</a></div>
+        <div><a  href="#">Apple TV & Privacy</a></div>
+        <div><a  href="#">Cooke Warning</a></div>
+        <div><a  href="#">Support</a></div>
+        
+    </div>
+    <div id="footer">
+       <div id="apple">
+        <div><h3>All Apple Originals</h3></div>
+        <div><button>Start Free Trial</button></div></div> 
+
+        <div id="terms"><div>Start watching with 7 days free. Or 3 months free when you buy an eligible Apple device.  <a href="#">Terms apply.</a></div>
+        <div><p>7 days free, then $4.99/month.</p></div>
+    </div>  </div>
+</body>
+</html>
+
+
+  <script src="./Scripts/seach.js"></script>
+        <script src="./Scripts/sar.js"></script>
