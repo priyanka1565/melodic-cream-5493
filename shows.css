@@ -141,19 +141,3 @@ height: 50px;
 #castcrew{
   margin-left: 40px;
 }
-#howtowatch{
-  margin-top: 20px;
-  /* border-radius: 20px; */
-  height: 350px;
-  width: 30%;
-  /* border: 1px solid red; */
-}
-#howtowatch-text{
-  margin-left: 30px;
-}
-#howtowatch>img{
-  border-radius: 10px;
-  margin-left: 20px;
-  height: 100%;
-  width: 100%;
-}
